@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+俺不知道为啥 tex-svg-full.js 必须放在一个 html 中生效. 我在 content-script.js
+通过 createElement('script') 将 tex-svg-full 加载到微信公众号编辑页面, 但 formula2Svg
+会报错: Uncaught TypeError: Cannot set properties of undefined (setting '_nodes')
+
+正好这个界面可以与 hidva.com _layouts/default.html 保持一致.
+-->
+    <script id="MathJax-script" async src="../assets/js/tex-svg-full.js"></script>
+
+</head>
+
+
+
+
+<body>
+    <script src="./server.js"></script>
+</body>
+
+</html>
